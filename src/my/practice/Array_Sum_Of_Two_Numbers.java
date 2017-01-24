@@ -2,6 +2,7 @@ package my.practice;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Created by Gaurav on 1/24/2017.
@@ -32,9 +33,11 @@ public class Array_Sum_Of_Two_Numbers {
 
     public static void main(String args[]) {
 
+        System.out.print("Enter a value to find two numbers in array whose sum equals the value provided :");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
         int arr[] = {4, 6, 3, 5, 2, 1, 7, 102};
-
-        printSum(arr, 85);
+        printSum(arr, number);
 
     }
 }
